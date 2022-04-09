@@ -5,5 +5,5 @@ There are still some issues with the game. I probably won't continue
 
 Database and Data in main folder.
 
-Here is the promotional video
+Here is the promotional video https://youtu.be/GH2NKeznqCc
 
