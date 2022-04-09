@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4663D6D4-03F4-4004-94DF-C63F12C4AE39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IDLE_FactoryGame</RootNamespace>
+    <AssemblyName>IDLE_FactoryGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Globals.cs" />
+    <Compile Include="Classes\MyResource.cs" />
+    <Compile Include="Machines\Machine.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manuel_Product\BasicProductions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manuel_Product\BasicProductions.Designer.cs">
+      <DependentUpon>BasicProductions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MachineModel.cs" />
+    <Compile Include="Models\ResourcesModel.cs" />
+    <Compile Include="Models\SQLConnectionClass.cs" />
+    <Compile Include="Forms\MyMachines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyMachines.Designer.cs">
+      <DependentUpon>MyMachines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistem\MasterFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\MasterFrm.Designer.cs">
+      <DependentUpon>MasterFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manuel_Product\ManualMine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manuel_Product\ManualMine.Designer.cs">
+      <DependentUpon>ManualMine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChooseRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseRecipe.Designer.cs">
+      <DependentUpon>ChooseRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChooseMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseMK.Designer.cs">
+      <DependentUpon>ChooseMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_MyMachines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UI_MyMachines.Designer.cs">
+      <DependentUpon>UI_MyMachines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_MyResources.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UI_MyResources.Designer.cs">
+      <DependentUpon>UI_MyResources.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manuel_Product\BasicProductions.resx">
+      <DependentUpon>BasicProductions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyMachines.resx">
+      <DependentUpon>MyMachines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sistem\MasterFrm.resx">
+      <DependentUpon>MasterFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manuel_Product\ManualMine.resx">
+      <DependentUpon>ManualMine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseRecipe.resx">
+      <DependentUpon>ChooseRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseMK.resx">
+      <DependentUpon>ChooseMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_MyMachines.resx">
+      <DependentUpon>UI_MyMachines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_MyResources.resx">
+      <DependentUpon>UI_MyResources.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="data.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CREATE_SCRIPT_and_DATA.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

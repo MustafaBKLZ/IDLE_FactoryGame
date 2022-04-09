@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDLE_FactoryGame", "IDLE_FactoryGame.csproj", "{4663D6D4-03F4-4004-94DF-C63F12C4AE39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4663D6D4-03F4-4004-94DF-C63F12C4AE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4663D6D4-03F4-4004-94DF-C63F12C4AE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4663D6D4-03F4-4004-94DF-C63F12C4AE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4663D6D4-03F4-4004-94DF-C63F12C4AE39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B3E879A-BB8C-4EC3-B83E-154B74B6F85B}
+	EndGlobalSection
+EndGlobal
